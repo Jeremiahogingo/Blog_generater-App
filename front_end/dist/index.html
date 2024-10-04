@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog Generator</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    
+
+</head>
+
+<body class="flex flex-col min-h sccren bg-gray-100 font-sans antialised">
+    <!--Navbar -->
+    <nav class="bg-blue-600 p-4 flex justify-between">
+        <div>
+            <h1 class="text-3xl text-white font-bold">AI Blog Generator</h1>
+        </div>
+        <div>
+            <a href="#" class="text-white hover:underline">Logout</a>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <!--main-->
+
+    <div class="flex-grow container mx-auto mt-10 px-4 sn:px-0">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md transition-transform tranform hover:scale-105 flex flex-col">
+            <!--Introduction section-->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Welcome to AI Blog Generator </h2>
+                <p class="text-gray-700">
+                    Generate high-quality blog articles from YouTube using Artificial Intelligence.
+                    Simply enter the link to the YouTube video bellow and let the AI create content for you!
+                </p>
+            </div>
+
+            <!--YouTube section-->
+            <br>
+            <div>
+                <h2 class="text-xl mb-4 font-semibold">Enter video YouTube link</h2>
+                <div class="flex space x-4">
+                    <input id="YouTube link" type="url" placeholder="paste YouTube link ... " class="flex-grow p-2 border-blue-400 rounded-l-md">
+                    <button id="generateblogbutton" class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors">Generate</button>
+                </div>
+            </div>
+             <!--Section for loading circle-->
+             <div style="display: block;" id="loading-circle" class="load"></div>
+
+            <!--Genrated blog display section-->
+            <section class="mt-10 flex-grow">
+                <h2 class="text-xl mb-4 font-semibold">Generated Blog Article</h2>
+                <div id="blogcontent" class="mt-2 text-gray-700 space-y-4">
+                   
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <footer class="text-center p-4 text-black mt-6">
+        Powered by Jerrylion
+    </footer>
+
+    <script>
+        
+    </script>
+
+</body>
+
+</html>
